@@ -53,8 +53,7 @@ void path(int** maze, int mazerow, int mazecol) {
     int exitrow = mazerow, exitcol = mazecol;
     int mark[10][10]={0};
     element position;
-    offsets move[8] = {{-1, 0}, {-1, 1}, {0, 1},  {1, 1},
-                       {1, 0},  {1, -1}, {0, -1}, {-1, -1}};
+    offsets move[8] = {{-1, 0}, {-1, 1}, {0, 1},  {1, 1}, {1, 0},  {1, -1}, {0, -1}, {-1, -1}};
     mark[1][1] = 1;
     stack[0].row = 1;
     stack[0].col = 1;
